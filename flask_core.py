@@ -7,5 +7,10 @@ app = Flask(__name__)
 def hello_world():
     return render_template('index.html')
 
+
+@app.route('/main')
+def main():
+    return render_template('views/main.html')
+
 if __name__ == '__main__':
     app.run()
